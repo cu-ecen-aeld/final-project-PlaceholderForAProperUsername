@@ -11,5 +11,8 @@ git submodule update
 source poky/oe-init-build-env
 
 add_configuration 'MACHINE = "raspberrypi4"'
+add_configuration 'LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"'
 
 add_layer "meta-raspberrypi"
+
+bitbake core-image-base
