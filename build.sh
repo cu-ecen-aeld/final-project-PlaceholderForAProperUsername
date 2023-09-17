@@ -12,7 +12,7 @@ source poky/oe-init-build-env
 
 add_configuration 'MACHINE = "raspberrypi4-64"'
 add_configuration 'LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"'
-add_configuration 'EXTRA_IMAGE_FEATURES ?= "debug-tweaks ssh-server-openssh"'
+add_configuration 'EXTRA_IMAGE_FEATURES += "debug-tweaks ssh-server-openssh"'
 
 add_layer "meta-openembedded/meta-oe"
 add_layer "meta-openembedded/meta-python"
