@@ -13,7 +13,7 @@ source poky/oe-init-build-env
 add_configuration 'MACHINE = "raspberrypi4-64"'
 add_configuration 'LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"'
 add_configuration 'EXTRA_IMAGE_FEATURES += "debug-tweaks ssh-server-openssh"'
-add_configuration 'IMAGE_INSTALL:append = " libgpiod libgpiod-dev libgpiod-tools i2c-tools"'
+add_configuration 'IMAGE_INSTALL:append = " libgpiod libgpiod-dev libgpiod-tools i2c-tools aeldhd44780-mod"'
 add_configuration 'ENABLE_I2C = "1"'
 add_configuration 'KERNEL_MODULE_AUTOLOAD:rpi += "i2c-dev i2c-bcm2708"'
 
@@ -26,4 +26,4 @@ add_layer "meta-aeld_final_project"
 
 bitbake-layers show-layers
 
-bitbake core-image-aeld
+bitbake core-image-base
