@@ -7,3 +7,6 @@
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = https://git.openembedded.org/meta-openembedded
+[submodule "meta-aeld_final_project"]
+	path = meta-aeld_final_project
+	url = git@github.com:PlaceholderForAProperUsername/meta-aeld_final_project.git
