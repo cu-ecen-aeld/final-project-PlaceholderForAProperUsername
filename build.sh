@@ -13,10 +13,10 @@ source poky/oe-init-build-env
 add_configuration 'MACHINE = "raspberrypi4-64"'
 add_configuration 'LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"'
 add_configuration 'EXTRA_IMAGE_FEATURES += "debug-tweaks ssh-server-openssh"'
-add_configuration 'IMAGE_INSTALL:append = " libgpiod libgpiod-dev libgpiod-tools i2c-tools"'
+add_configuration 'IMAGE_INSTALL:append = " libgpiod libgpiod-dev libgpiod-tools i2c-tools aeld_hd44780"'
 add_configuration 'ENABLE_I2C = "1"'
 add_configuration 'KERNEL_MODULE_AUTOLOAD:rpi += "i2c-dev i2c-bcm2708"'
-add_configuration 'MACHINE_EXTRA_RDEPENDS += " kernel-module-aeld_hd44780"'
+add_configuration 'MACHINE_EXTRA_RDEPENDS += "kernel-module-aeld_hd44780"'
 
 add_layer "meta-openembedded/meta-oe"
 add_layer "meta-openembedded/meta-python"
