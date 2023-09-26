@@ -2,9 +2,9 @@
 
 ## Overview
 ---
-In this project, a simple heart rate monitor will be implemented. A MAX30101 sensor 
-will be used to measure the heart rate. The result will be displayed on a common
-16x2 LCD.
+In this project, a simple weather monitor will be implemented. A BME280 sensor
+will be used to measure temperature, humidity and pressure. The results will be
+displayed on an 20x4 LCD.
 
 ![Block Diagram](block_diagram.jpg)
 ## Target Build System
@@ -25,9 +25,8 @@ N/A
 
 ## New Content
 ---
-Drivers for the MAX30101 sensor to measure the heart rate and for the 16x2 LCD
-to display the data. 
-A daemon to frequently get the measurement data and forward it to 16x2 LCD.
+Drivers for the BME280 and for the 20x4 LCD to display the data. 
+A daemon to frequently get the measurement data and forward it to 20x4 LCD.
 
 ## Shared Material
 ---
