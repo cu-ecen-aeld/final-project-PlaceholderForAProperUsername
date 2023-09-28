@@ -26,4 +26,4 @@ add_layer "meta-aeld_final_project"
 
 bitbake-layers show-layers
 
-bitbake core-image-base
+bitbake core-image-aeld
